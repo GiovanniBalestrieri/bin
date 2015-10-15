@@ -1,0 +1,2 @@
+arduino_nav_bridge:gepps:pocketsphinx:robot_setup_tf:ros_aiml:rosserial/rosserial:rosserial/rosserial_arduino:rosserial/rosserial_client:rosserial/rosserial_embeddedlinux:rosserial/rosserial_msgs:rosserial/rosserial_python:rosserial/rosserial_server:rosserial/rosserial_windows:rosserial/rosserial_xbee:sample_tts
+-DCATKIN_DEVEL_PREFIX=/home/userk/Development/Ros/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/userk/Development/Ros/catkin_ws/install -G Unix Makefiles

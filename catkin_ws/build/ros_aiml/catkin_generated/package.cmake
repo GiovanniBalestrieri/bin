@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "ros_aiml")
+set(ros_aiml_MAINTAINER "userk <userk@todo.todo>")
+set(ros_aiml_DEPRECATED "")
+set(ros_aiml_VERSION "0.0.0")
+set(ros_aiml_BUILD_DEPENDS "rospy" "sound_play" "std_msgs")
+set(ros_aiml_RUN_DEPENDS "rospy" "sound_play" "std_msgs")
+set(ros_aiml_BUILDTOOL_DEPENDS "catkin")

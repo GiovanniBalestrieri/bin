@@ -1,0 +1,12 @@
+background_b: 255
+background_g: 150
+background_r: 150
+rosdistro: 'indigo
+
+  '
+roslaunch:
+  uris: {host_dopamine__37066: 'http://dopamine:37066/'}
+rosversion: '1.11.10
+
+  '
+run_id: cb012390-c79a-11e4-b1e6-54bef781e786

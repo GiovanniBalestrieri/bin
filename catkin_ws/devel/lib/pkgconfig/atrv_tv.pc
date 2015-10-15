@@ -1,0 +1,8 @@
+prefix=/home/userk/Development/Ros/catkin_ws/devel
+
+Name: atrv_tv
+Description: Description of atrv_tv
+Version: 0.0.0
+Cflags: -I/home/userk/Development/Ros/catkin_ws/devel/include
+Libs: -L/home/userk/Development/Ros/catkin_ws/devel/lib -latrv
+Requires: geometry_msgs roscpp sensor_msgs std_msgs tf

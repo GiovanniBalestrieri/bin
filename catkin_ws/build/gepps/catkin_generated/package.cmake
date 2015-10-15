@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "gepps")
+set(gepps_MAINTAINER "userk <userk@todo.todo>")
+set(gepps_DEPRECATED "")
+set(gepps_VERSION "0.0.0")
+set(gepps_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(gepps_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(gepps_BUILDTOOL_DEPENDS "catkin")

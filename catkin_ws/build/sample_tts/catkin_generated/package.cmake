@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "sample_tts")
+set(sample_tts_MAINTAINER "userk <userk@todo.todo>")
+set(sample_tts_DEPRECATED "")
+set(sample_tts_VERSION "0.0.0")
+set(sample_tts_BUILD_DEPENDS "roscpp" "rospy" "sound_play" "std_msgs")
+set(sample_tts_RUN_DEPENDS "roscpp" "rospy" "sound_play" "std_msgs")
+set(sample_tts_BUILDTOOL_DEPENDS "catkin")

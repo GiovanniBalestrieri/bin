@@ -1,0 +1,8 @@
+prefix=/home/userk/Development/Ros/catkin_ws/install
+
+Name: gepps
+Description: Description of gepps
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/userk/Development/Ros/catkin_ws/install/lib 
+Requires: 
