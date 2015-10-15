@@ -1,0 +1,16 @@
+navigazione con mappa statica precaricata:
+
+Far partire la localizzazione con mappa statica
+1- roslaunch atrv amcl_with_static_map.launch
+
+In rviz caricare la configurazione loc_plan_and_go.rviz
+
+Far partire move base:
+2- roslaunch atrv move_base.launch
+
+ATTENZIONE:
+
+Il fixed frame in rviz deve essere su /map affinchè le letture laser siano correttamente sovrapposte agli ostacoli.
+Settare la posizione iniziale con sufficiente accuratezza (pulsante 2D pose estimate).
+
+Il planner spesso e volentieri cincischia nel punto finale...ucciderlo in tempo !!

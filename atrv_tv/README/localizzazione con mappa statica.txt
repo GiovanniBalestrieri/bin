@@ -1,0 +1,9 @@
+Localizzazione con mappa statica precaricata:
+
+1- roslaunch atrv amcl_with_static_map.launch
+
+ATTENZIUONE:
+
+Il fixed frame in rviz deve essere su /map affinchè le letture laser siano correttamente sovrapposte agli ostacoli.
+Settare la posizione iniziale con sufficiente accuratezza (pulsante 2D pose estimate).
+

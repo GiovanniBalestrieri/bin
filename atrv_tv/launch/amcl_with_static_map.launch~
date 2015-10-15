@@ -1,0 +1,27 @@
+<launch>
+
+	<!-- prende i comandi di velocità dal topic atrv/vel_cmd e scrive sui topic odom e laser i dati dei sensori-->
+	 <node pkg="atrv_tv" name="atrv_player_with_motors" type="atrv_player_with_motors"/>
+
+	 <!-- Comando  via joystick -->
+	 <node respawn="true" pkg="joy" type="joy_node" name="joy_node" >
+	       <param name="dev" type="string" value="/dev/input/js0" />
+ 	      <param name="deadzone" value="0.12" />
+   	 </node>
+	 <node pkg="atrv_tv" name="joy_telop_atrv" type="joy_telop_atrv"/>
+
+
+
+    <!-- Run the map server -->
+    <!--<node name="map_server" pkg="map_server" type="map_server" args="$(find atrv)/maps/hall_nottericerca.yaml"/>-->
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find atrv)/map/hall_2_12_14.yaml"/>
+
+
+   <include file="$(find atrv_tv)/launch/amcl_node.launch" />
+
+	 <node pkg="rviz" name="rviz" type="rviz" args="--display-config $(find atrv)/rviz/local_che_funziona.rviz"/>
+ 
+ 	 <node pkg="rqt_console" name="rqt_console" type="rqt_console" />
+ 
+
+</launch>
