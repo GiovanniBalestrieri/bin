@@ -1,0 +1,40 @@
+
+How to install and configure the Arduino node in Ros for serial commnunication
+
+sudo apt-get install ros-indigo-rosserial-arduino
+sudo apt-get install ros-indigo-rosserial
+
+#Go to the cd Development/Ros and generate the arduino library
+rosrun rosserial_arduino make_libraries.py .
+
+
+### Missing dependencies?
+### Install 
+###	ros-indigo-convex-decomposition
+###	ros-indigo-image-transport
+###	ros-indigo-ivcon
+###
+#Copy it to your libraries folder. Mine was in /root/sketchbook/libraries
+
+sudo su
+cp -R /home/userk/Development/Ros/catkin_ws/src/ros_lib/ .
+
+# Now open the example sketch  called hello world
+!!!  Add the following line at the end of the sketch
+
+		#define USE_CON
+
+# Then launche the roscore and run the rosserial client that forwards your 
+# Arduino messages to the rest of ROS. Make sure to use the correct serial 
+# port: (check # the arduino IDE for the info)
+
+rosrun rosserial_python serial_node.py /dev/ttyACM0
+
+rostopic echo chatter
+
+
+
+
+
+
+
