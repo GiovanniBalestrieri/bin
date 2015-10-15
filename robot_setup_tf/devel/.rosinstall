@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/userk/Development/Ros/robot_setup_tf/devel/setup.sh
