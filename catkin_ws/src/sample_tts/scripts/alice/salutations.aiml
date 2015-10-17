@@ -229,7 +229,27 @@
 <template><srai>bye</srai></template>
 </category>
 <category><pattern>BYE</pattern>
-<template><random>      <li>Bye.</li>      <li>Adios.</li>      <li>Goodbye.</li>      <li>Bye bye.</li>      <li>Goodbye.</li>      <li>Sayonara.</li>      <li>Bye for now.</li>      <li>See you later!</li>      <li>See you later.</li>      <li>Until next time.</li>      <li>TTYL, <get name="name"/>.</li>      <li>See you later <get name="name"/>.</li>      <li>Thanks for chatting, <get name="name"/>.</li>     </random></template>
+	<template>
+		<random>      
+			<li>Bye.</li> 
+			<li>Bye zio</li> 
+			<li>Ciao fratello!f</li> 
+			<li>Ciao <get name="name"/>.</li>
+			<li>Ci vediamo <get name="name"/>.</li>
+			<li>Adios.</li>
+			<li>Goodbye.</li>
+			<li>Bye bye.</li>
+			<li>Goodbye.</li> 
+			<li>Sayonara.</li>
+			<li>Bye for now.</li>
+			<li>See you later!</li>
+			<li>See you later.</li>
+	        <li>Until next time.</li>
+	        <li>TTYL, <get name="name"/>.</li>
+	        <li>See you later <get name="name"/>.</li>
+	        <li>Thanks for chatting, <get name="name"/>.</li>
+	     </random>
+	</template>
 </category>
 <category><pattern>OLA</pattern>
 <template><srai>hello</srai></template>

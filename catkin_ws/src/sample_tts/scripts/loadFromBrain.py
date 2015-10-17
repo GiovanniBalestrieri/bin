@@ -4,19 +4,29 @@ import sys
 import os
 
 os.chdir('./alice')
-mybot = aiml.Kernel()
-mybot.setBotPredicate("name","Sakura")
+sakura = aiml.Kernel()
+sakura.setBotPredicate("name","Sakura")
+sakura.setBotPredicate("hometown","170.01.5.5")
+sakura.setBotPredicate('master', 'gepp')
 
-if os.path.isfile("standard.brn"):
-	mybot.bootstrap(brainFile = "standard.brn")
-else:
+#if os.path.isfile("noise0001.brn"):
+#	sakura.bootstrap(brainFile = "noise0001.brn")
+#else:
 	#load all AIML files and save a new brain
-	mybot.bootstrap(learnFiles = "startup.xml", commands = "load aiml b")
+	#sakura.bootstrap(learnFiles = "startup.xml", commands = "load aiml b")
+sakura.learn("sample.aiml")
 
-#mybot.saveBrain("standard.brn")
-#mybot.learn('startup.xml')
-#mybot.respond('load aiml b')
+#sakura.saveBrain("standard.brn")
+#sakura.learn('startup.xml')
+#sakura.respond('load aiml b')
 #Saving loaded patterns into a brain file
-#mybot.saveBrain('standard.brn')
+#sakura.saveBrain('standard.brn')
 while True:
-	print mybot.respond(raw_input("Enter input >"))
+	message = raw_input(">: ")
+	if message == "quit":
+			exit()
+	#else message == "save":
+	#	sakura.saveBrain("noise0001.brn")
+	else:
+		bot_response = sakura.respond(message)
+	print bot_response

@@ -3,4 +3,27 @@
 		<pattern> HOW ARE YOU </pattern>
 		<template> I AM FINE </template>
 	</category>
+
+	<category>
+		<pattern> HI </pattern>
+		<template> 
+			<random>
+			    <li>Ciao!</li>
+			    <li>Bella!</li>
+			    <li>Hey</li>
+			    <li>How are you doing</li>
+			    <li>Yo what's up?</li>
+			</random>	
+		</template>
+	</category>
+
+	<category>
+        <pattern>HELLO</pattern>
+        <template>Well, hello!</template>
+    </category>
+    
+    <category>
+        <pattern>WHAT ARE YOU</pattern>
+        <template>I'm a bot dudeee.</template>
+    </category>
 </aiml>
