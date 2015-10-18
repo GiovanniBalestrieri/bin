@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import rospy
+import time
 import aiml
 import os
 import sys
@@ -31,7 +32,7 @@ def load_aiml(xml_file):
 def callback(data):
 	input = data.data
 	response = mybot.respond(input)
-	sleep(0.2)
+	time.sleep(0.2)
 	rospy.loginfo("You: %s",data.data)
 	rospy.loginfo("Me: %s",response)
 	response_publisher.publish(response)
