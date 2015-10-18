@@ -1,0 +1,26 @@
+<aiml version="1.0">
+
+<category>
+	<pattern> WHAT IS THE COLOR OF *</pattern>
+	<template><srai>COLOR OF <star/></srai></template>
+</category>
+
+<category>
+	<pattern> COLOR OF *</pattern>
+	<template><srai>COLOR OF <star/></srai></template>
+</category>
+
+<category>
+	<pattern> BREAD </pattern>
+	
+
+<category>
+	<pattern>SEX</pattern>
+	<that>WHAT WERE WE TALKING ABOUT AGAIN</that>
+	<template>Humans are very concerned with 
+			<set name="it">
+			<set name="topic">sex</set>
+			</set>.
+	</template>
+</category>
+</aiml>
