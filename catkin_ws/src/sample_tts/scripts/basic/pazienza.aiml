@@ -6,12 +6,29 @@
 </category>
 
 <category>
-	<pattern> COLOR OF *</pattern>
+	<pattern> WHAT COLOR is *</pattern>
 	<template><srai>COLOR OF <star/></srai></template>
 </category>
 
 <category>
+	<pattern> WHAT Are THE COLORs OF *</pattern>
+	<template><srai>COLOR OF <star/></srai></template>
+</category>
+
+<category>
+	<pattern> COLOR OF *</pattern>
+	<template><srai><star/></srai></template>
+</category>
+
+<category>
 	<pattern> BREAD </pattern>
+   <template> Bread is white.</template> 
+ </category>
+
+<category> 
+   <pattern> I LIKE * </pattern> 
+   <template> I like <star/> too. That's funny XD.</template> 
+ </category>
 	
 
 <category>
