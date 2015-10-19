@@ -11,8 +11,10 @@ mybot = aiml.Kernel()
 mybot.setBotPredicate("name","Sakura")
 mybot.setBotPredicate("hometown","127.0.0.1")
 mybot.setBotPredicate("password","noise")
+mybot.setBotPredicate("master","userK")
+mybot.setBotPredicate("gender","female")
 
-#Creating a ROS publisher for the /response topic
+#Creating a ROS publisher fileosr the /response topic
 response_publisher = rospy.Publisher('response',String,queue_size=10)
 
 #Function to load AIML files using bootstrap() method
